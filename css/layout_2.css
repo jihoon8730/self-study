@@ -1,0 +1,136 @@
+body {
+  margin: 0px;
+}
+
+div,
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15; /*기본 행간 높이*/
+}
+
+.main-background {
+  width: 100%;
+  height: 500px;
+
+  /* 배경에 검은색 틴트 주기 (linear-gradient) */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../background1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 1px;
+
+  /* 색감 필터 */
+  /* filter: brightness(70%); */
+
+  /* background-attachment: fixed; */
+}
+
+.main-title {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+
+  /* margin collapse 현상시 부모태그에 padding 조금 적용 */
+  margin-top: 100px;
+}
+
+.main-text {
+  padding: 20px 50px 30px 50px;
+  color: white;
+  text-align: center;
+}
+
+.main-button {
+  width: 100px;
+  padding: 15px;
+  color: #eee;
+  background-color: royalblue;
+  border: none;
+  border-radius: 7px;
+  display: block;
+  margin: auto;
+
+  /* position: relative 포지션 좌표이동 내 원래 위치를 기준으로 이동
+  top: 100px;
+  bottom : 100px;
+  left: 100px;
+  right: 100px; */
+
+  /* position: absolut 내 부모 태그가 기준 
+  relative를 가진 부모 기준*/
+
+  /* position을 쓰면 1. 좌표이동 가능  2. 공중에 붕 뜸 */
+}
+
+.sub-text {
+  width: 80%;
+  /* width는 content영역의 너비를 의미함 (중요!!) */
+  max-width: 600px;
+
+  /* (box-sizing: border-box;) padding, border를 전부 포함 content영역을 지정해줌 */
+  box-sizing: border-box;
+
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  background-color: #d3dedc;
+  position: relative;
+  margin-top: -40px;
+
+  /* z-index : 정수  를 주면 앞으로 올 우선순위 블록 정하기 */
+}
+
+/* 
+input[type="email"] {
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+} */
+
+.form-background {
+  background-color: black;
+  padding: 30px;
+}
+
+.form-white {
+  background-color: white;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.w-50 {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+.w-100 {
+  width: 100%;
+  padding: 10px;
+}
+
+.yellow-button {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  background-color: royalblue;
+  border: none;
+  color: white;
+}
