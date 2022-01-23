@@ -1,5 +1,13 @@
+/* @font-face {
+  font-family: "이쁜폰트";
+  src: url(../font/NanumSquareB.woff);
+} */
+
 body {
   margin: 0px;
+  font-family: "Roboto", sans-serif;
+
+  /* font가 깨져보일시 transform: rotate(0.01deg) 돌려보자! */
 }
 
 div,
@@ -133,4 +141,30 @@ input[type="email"] {
   background-color: royalblue;
   border: none;
   color: white;
+}
+
+/* flex 실습 */
+
+.flex-logo {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  color: whitesmoke;
+  background-color: black;
+  padding: 10px;
+}
+
+.flex-item {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.buy {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.menu {
+  color: white;
+  text-decoration: none;
 }
