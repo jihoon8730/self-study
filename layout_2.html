@@ -17,8 +17,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
   <!-- css link -->
-  <link rel="stylesheet" href="css/layout_2.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/layout_2.css">
+  <link rel="stylesheet" href="css/layout2_2.css">
 </head>
 
 <body>
@@ -29,11 +30,10 @@
     <a href="#" class="flex-item menu">products</a>
     <a href="#" class="flex-item menu">services</a>
   </nav>
-  <!--  -->
 
   <div class="main-background">
     <h4 class="main-title">B U Y</h4>
-    <p class="main-text">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+    <p class="main-text custom">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
       velit..."
       "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
     <button class="main-button">Buy now!</button>
@@ -41,10 +41,16 @@
 
   <div class="sub-text">
     <h4>How we design our item</h4>
-    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+    <p class="pseudo">It is a long established fact that a reader will be distracted by the readable content of a page when looking at
       its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
   </div>
 
+  <input type="range">
+  <style>
+    input[type=range]::-webkit-slider-runnable-track {
+      background: red;
+    }
+  </style>
 
   <div class="menu-produts">
     <div>
@@ -69,13 +75,23 @@
     </div>
   </div>
 
+  <!-- video -->
+  <video controls style="width: 100%;">
+    <source src="video/bridge.mp4" type="video/mp4">
+  </video>
+
+  <!-- audio -->
+  <audio controls>
+    <source src="video/bass.mp3"> 
+  </audio>
+
   <div class="shop-bg">
     <div class="shop-container">
       <div class="shop-item">
         <div class="shop-relative">
           <div class="overlay-wrap">
-            <div class="overlay-black">
-          </div>
+            <div class="overlay-black"><span>$60</span>
+            </div>
           </div>
           <img src="img/product1-1.jpg">
         </div>
