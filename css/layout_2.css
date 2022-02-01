@@ -282,6 +282,33 @@ input[type="email"] {
   display: block;
 }
 
+/* transform 2월1일 */
+
+.ani-text {
+  text-align: center;
+}
+
+.ani-text:hover {
+  animation-name: 왔다갔다;
+  animation-duration: 1s;
+}
+
+/* 좋은말할때 transform으로 사용하기 */
+@keyframes 왔다갔다 {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  75% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 /* media query 보통 css최하단 */
 
 @media screen and (max-width: 1200px) {
