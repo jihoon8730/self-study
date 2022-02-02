@@ -20,6 +20,39 @@ html {
   line-height: 1.15; /*기본 행간 높이*/
 }
 
+/* animation tranform menu 2/2 */
+@keyframes slide {
+  0% {
+    transform: translateX(-250px);
+  }
+  50% {
+    transform: translateX(20px) skewX(-30deg);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.ani-navbar:hover p {
+  animation-name: slide;
+  animation-duration: 1s;
+}
+.ani-navbar:hover {
+  transform: translateX(0px);
+  text-align: center;
+}
+.ani-navbar {
+  width: 200px;
+  background-color: black;
+  color: white;
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+  z-index: 5;
+  text-align: right;
+  transition: all 1s;
+  transform: translateX(-150px);
+}
+
 .main-background {
   width: 100%;
   height: 500px;
@@ -291,6 +324,70 @@ input[type="email"] {
 .ani-text:hover {
   animation-name: 왔다갔다;
   animation-duration: 1s;
+}
+
+/* ani-btn(흔들버튼) */
+
+@keyframes shki {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.ani-btn {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: royalblue;
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto;
+}
+
+.ani-btn:hover {
+  animation-name: shki;
+  animation-duration: 0.5s;
+}
+
+/* 십자가 회전! */
+
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(45deg) scale(2);
+  }
+}
+
+.ani-x {
+  margin: 150px auto;
+  text-align: center;
+  font-size: 70px;
+  width: 84px;
+  cursor: pointer;
+}
+
+.ani-x:hover {
+  animation-name: turn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 /* 좋은말할때 transform으로 사용하기 */
